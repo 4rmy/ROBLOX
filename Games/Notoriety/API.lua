@@ -26,7 +26,7 @@ NotorietyAPI.getRemoteKey = function()
     for i = 1, #gGC do
         local v = gGC[i]
         if (debug.getinfo(v).name == "shoot") then
-            NotorietyAPI.RemoteKey = debug.getupvalue(v, 21)
+            NotorietyAPI.RemoteKey = debug.getupvalue(v, 22)
             break
         end
     end
